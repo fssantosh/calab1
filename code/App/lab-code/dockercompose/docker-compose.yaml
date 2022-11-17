@@ -1,0 +1,17 @@
+version: '3.1'
+
+services:
+
+  #CODE2.0:
+  #configure the upstream NGINX reverse proxy container and mount the nginx.conf file
+  #see - https://docs.docker.com/compose/compose-file/
+  nginx:
+
+  #CODE2.1:
+  #configure the downstream FLASK application container and configure environment vars
+  #see - https://docs.docker.com/compose/compose-file/
+  flask:
+
+networks:
+  cloudacademy:
+    driver: bridge
